@@ -64,6 +64,57 @@ nav ul li a:hover {
     font-size: 3rem;
 }
 
+.hero-content p {
+    font-size: 1.6rem;  /* Slightly larger font size */
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);  /* Subtle text shadow to make the text more readable */
+    line-height: 1.6;  /* Add line height for better readability */
+    font-family: 'Poppins', sans-serif;  /* Matching font to the modern design */
+    text-transform: uppercase;  /* Capitalize text for emphasis */
+    letter-spacing: 1px;  /* Space out letters slightly */
+    font-weight: 500;  /* Medium weight for text */
+    background: rgba(0, 0, 0, 0.4);  /* Semi-transparent black background to create contrast */
+    padding: 10px;  /* Add padding to text for separation */
+    border-radius: 10px;  /* Rounded corners for a smooth appearance */
+    display: inline-block;  /* Ensure it wraps well */
+    max-width: 80%;  /* Limit width for better layout */
+    text-align: center;  /* Ensure it's centered */
+    margin-top: 10px;  /* Adjust position */
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;  /* Space between elements */
+    height: 100%;  /* Ensure the hero section takes full height */
+}
+
+.hero-content .btn {
+    padding: 15px 30px;  /* Bigger padding for the button */
+    background-color: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;  /* Rounded button edges for a modern look */
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    width: auto;  /* Adjust width based on content */
+    max-width: 250px;  /* Max width for consistency */
+    margin-top: 20px;  /* Ensure spacing from text */
+    display: inline-block;  /* Makes it align nicely */
+}
+
+.hero-content .btn:hover {
+    background-color: #ff4d4d;  /* Slightly darker on hover */
+    transform: translateY(-5px);  /* Small lift effect */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);  /* Subtle shadow on hover */
+}
+
+
 /* Booking Section */
 .booking form {
     display: flex;
@@ -338,5 +389,35 @@ footer .social-icons a {
         opacity: 1;
         transform: translateY(0);
     }
+}
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff6b6b; /* Warm color from existing design */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin-top: 20px; /* Space between the text and button */
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.btn:hover {
+    background-color: #e94560; /* Slightly darker shade */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    transform: translateY(-4px); /* Slight lift effect */
+}
+
+/* Focus Effect */
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
