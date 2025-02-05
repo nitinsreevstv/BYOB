@@ -402,9 +402,19 @@ footer .social-icons a {
     .about p {
         font-size: 1rem;
     }
-
     .booking form {
+        max-width: 90%;  /* Adjust form width for smaller screens */
         padding: 15px;
+    }
+
+    .booking form input,
+    .booking form button {
+        padding: 10px;
+        font-size: 0.9rem;  /* Slightly smaller font for mobile */
+    }
+
+    .booking form button {
+        padding: 14px;  /* Adjust padding for button on mobile */
     }
 }
 
@@ -438,4 +448,20 @@ footer .social-icons a {
     .about p {
         font-size: 0.9rem;
     }
+    .booking form {
+        max-width: 100%;  /* Make form take full width on very small screens */
+        padding: 10px;
+    }
+
+    .booking form input,
+    .booking form button {
+        padding: 10px;
+        font-size: 0.85rem;  /* Even smaller font size on smaller screens */
+    }
+
+    .booking form button {
+        padding: 12px;  /* Adjust button size */
+    }
 }
+
+
