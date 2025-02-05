@@ -317,3 +317,26 @@ footer .social-icons a {
     margin-bottom: 20px;
 }
 
+.hero-content {
+    text-align: center;
+}
+
+.hero-logo {
+    max-width: 250px; /* Adjust the size as needed */
+    height: auto;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out; /* Smooth fade-in effect */
+}
+
+/* Optional fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
