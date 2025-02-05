@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #222;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  header .logo img {
+    height: 50px;
+    transition: transform 0.3s ease;
+  }
+
+  header .logo img:hover {
+    transform: scale(1.1); /* Add a slight zoom effect on hover */
+  }
+  
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Increased space between menu items */
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    background-color: #ff6b6b; /* Highlight menu items on hover */
+    color: #fff;
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  header {
+    animation: fadeInDown 0.5s ease-out;
+  }
+  
+  .hero {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .about, .booking, .location {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .booking form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .booking form input, .booking form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .booking form button {
+    background-color: #ff6b6b;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .location .map {
+    margin-top: 20px;
+  }
+  
+  footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer .social-icons {
+    margin-top: 10px;
+  }
+  
+  footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.2rem;
+  }
+
+  .map {
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .map iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+  }
+  
