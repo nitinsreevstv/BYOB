@@ -114,15 +114,90 @@ nav ul li a:hover {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);  /* Subtle shadow on hover */
 }
 
+/* Booking Section Styling */
+.booking {
+    background: linear-gradient(135deg, #16213e 0%, #1a1a2e 100%);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
 
-/* Booking Section */
+.booking h2 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: #ff6b6b;
+}
+
 .booking form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     max-width: 400px;
     margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+.booking form input,
+.booking form button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.booking form input {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.booking form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.booking form button {
+    background-color: #ff6b6b;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.booking form button:hover {
+    background-color: #e94560;
+    transform: scale(1.05);
+}
+
+/* Location Section Styling */
+.location {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.location h2 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: #00d2ff;
+}
+
+.location p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
 
 /* Footer */
 footer {
@@ -155,6 +230,7 @@ footer .social-icons a {
     border: 0;
     border-radius: 10px;
 }
+
 /* Features Section Styles */
 .features-container {
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
@@ -249,6 +325,7 @@ footer .social-icons a {
         transform: translate(-50px, 50px);
     }
 }
+
 /* About Section Styling */
 .about {
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
@@ -285,139 +362,80 @@ footer .social-icons a {
     background: rgba(0, 0, 0, 0.3);
     z-index: -1;
 }
-/* Booking Section Styling */
-.booking {
-    background: linear-gradient(135deg, #16213e 0%, #1a1a2e 100%);
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-}
 
-.booking h2 {
-    font-size: 2.5em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-    color: #ff6b6b;
-}
-
-.booking form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.booking form input,
-.booking form button {
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.booking form input {
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    outline: none;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.booking form input::placeholder {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.booking form button {
-    background-color: #ff6b6b;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.booking form button:hover {
-    background-color: #e94560;
-    transform: scale(1.05);
-}
-/* Location Section Styling */
-.location {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-}
-
-.location h2 {
-    font-size: 2.5em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-    color: #00d2ff;
-}
-
-.location p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-.hero-content {
-    text-align: center;
-}
-
-.hero-logo {
-    max-width: 250px; /* Adjust the size as needed */
-    height: auto;
-    margin-bottom: 20px;
-    animation: fadeIn 1.5s ease-in-out; /* Smooth fade-in effect */
-}
-
-/* Optional fade-in animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+        max-width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .feature-card {
+        padding: 20px;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+
+    .booking form {
+        padding: 15px;
     }
 }
-/* Button Styles */
-.btn {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #ff6b6b; /* Warm color from existing design */
-    color: #fff;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    margin-top: 20px; /* Space between the text and button */
-    cursor: pointer;
-}
 
-/* Hover Effect */
-.btn:hover {
-    background-color: #e94560; /* Slightly darker shade */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
-    transform: translateY(-4px); /* Slight lift effect */
-}
+@media screen and (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
 
-/* Focus Effect */
-.btn:focus {
-    outline: none;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-}
+    .hero-content p {
+        font-size: 1rem;
+    }
 
+    .btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .feature-card {
+        padding: 15px;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: 0.9rem;
+    }
+}
