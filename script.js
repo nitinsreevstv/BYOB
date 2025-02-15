@@ -13,7 +13,7 @@ document.getElementById('booking-form').addEventListener('submit', function(even
       time: time
     };
   
-    fetch('https://script.google.com/macros/s/AKfycbwE1Etqnr7OonhZuGgEQ1iA9yp3ASpYNRyXek2NON0hkTb4JMrrk2jQkGVYnJAX2GMgDw/exec', { // ***REPLACE THIS WITH YOUR ACTUAL URL***
+    fetch('https://script.google.com/macros/s/AKfycbzuMmpV9-mS_WPHdkXdOeHaN31Cl8GPwlGzcKKTzicI8XTdUfhVuGt16kowpG7OT-CWKw/exec', { // ***REPLACE THIS WITH YOUR ACTUAL URL***
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
