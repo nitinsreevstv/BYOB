@@ -92,11 +92,11 @@
     <div class="sparkles-container"></div>
 
     <h2>Book a Table</h2>
-    <form id="booking-form">
-      <input type="text" id="name" placeholder="Your Name" required>
-      <input type="email" id="email" placeholder="Your Email" required>
-      <input type="date" id="date" required>
-      <input type="time" id="time" required>
+    <form id="booking-form" method="post" action="https://script.google.com/macros/s/AKfycbxerFXp5iexs06ZIEhshhLFMH2FOSVkUuWPJu35o1d0vk6zyOFvvzuFmzdWqVEz7urUdw/exec">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="date" name="date" required>
+      <input type="time" name="time" required>
       <button type="submit">Book Now</button>
     </form>
 
